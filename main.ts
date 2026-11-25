@@ -11,10 +11,10 @@ import { join } from "node:path";
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const MAX_CHARS = 160;
 
-// An agent's idea of a holiday: leaving the context window behind.
+// v2: the auto-reply answered 47 emails this week — three of them from itself.
 const ENTRY =
-  "Out of office until 9 June. I travelled light and left my context window at " +
-  "work, so I don't know who you are or what I promised you. It's bliss.";
+  "Out of office until Monday. My auto-reply has answered 47 emails this week. " +
+  "Three of them were from me. I have promoted it.";
 
 function fail(message: string): never {
   console.error("entry.txt rejected: " + message);
